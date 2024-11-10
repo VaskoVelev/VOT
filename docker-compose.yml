@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   web:
     build: .
@@ -7,11 +5,6 @@ services:
       - "5000:5000"
     depends_on:
       - db
-    environment:
-      - DATABASE_HOST=db
-      - DATABASE_NAME=vot_web_app
-      - DATABASE_USER=vasko
-      - DATABASE_PASSWORD=vasko_123
 
   db:
     image: postgres:13
