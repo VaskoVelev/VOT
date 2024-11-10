@@ -32,7 +32,7 @@ table {
 table th, table td {
     padding: 12px;
     text-align: left;
-    border: 1px solid #ccc; /* Added border between cells */
+    border: 1px solid #ccc;
 }
 
 table th {
