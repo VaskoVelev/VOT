@@ -6,10 +6,10 @@ app = Flask(__name__)
 
 def get_db_connection():
     return psycopg2.connect(
-        host=os.getenv('DATABASE_HOST', 'db'),
-        database=os.getenv('DATABASE_NAME', 'vot_web_app'),
-        user=os.getenv('DATABASE_USER', 'vasko'),
-        password=os.getenv('DATABASE_PASSWORD', 'vasko_123')
+        host=os.getenv('DATABASE_HOST'),
+        database=os.getenv('DATABASE_NAME'),
+        user=os.getenv('DATABASE_USER'),
+        password=os.getenv('DATABASE_PASSWORD')
     )
 
 def create_table():
