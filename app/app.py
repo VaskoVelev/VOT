@@ -7,9 +7,9 @@ app = Flask(__name__)
 def get_db_connection():
     return psycopg2.connect(
         host="db",
-        database="mydatabase",
-        user="myuser",
-        password="mypassword"
+        database="vot_web_app",
+        user="vasko",
+        password="vasko_123"
     )
 
 def index():
